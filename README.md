@@ -1,4 +1,4 @@
-**Step 1:** [Download]this repo as a zip
+**Step 1:**  Download this repo as a zip
 
 **Step 2:** To run:
 
