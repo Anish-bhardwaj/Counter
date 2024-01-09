@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="overflow-hidden bg-[#344151]">
+    <div class="justify-center place-items-center flex h-[100vh] w-[100vw]">
+        <div class="box flex flex-col ">
+            <div class="pb-8 font-medium text-[20px]">
+                <h2 class="text-[#0398d4]">Increment And Decrement</h2>
+            </div>
+            <div class="flex bg-white rounded-sm place-items-center justify-between text-[#344151] gap-12 relative  text-[25px] p-3 px-5">
+
+                <button id="minus" class=" pr-5 font-bold border-r-2 border-[#bfbfbf]"><i class="fa-solid fa-minus" aria-hidden="true"></i></button>
+                <p class="   font-bold  text-center" id="value">0</p>
+                <button id="plus" class="pl-5 border-l-2 border-[#bfbfbf] font-bold"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        let plus=document.querySelector('#plus');
+        let minus=document.querySelector('#minus');
+        let value=document.querySelector('#value');
+        plus.addEventListener('click',function (){
+            let val=parseInt(value.textContent);
+            val++;
+            value.textContent=val;
+        });
+        minus.addEventListener('click',function (){
+            let val=parseInt(value.textContent);
+            val--;
+            value.textContent=val;
+        });
+    </script>
+</body>
+
+</html>
